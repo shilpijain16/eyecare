@@ -1,0 +1,18 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.sun.faces/jsf-api
+	compile group: 'com.sun.faces', name: 'jsf-api', version: '2.2.2'
+	// https://mvnrepository.com/artifact/com.sun.faces/jsf-impl
+	compile group: 'com.sun.faces', name: 'jsf-impl', version: '2.2.2'
+	
+}
+
