@@ -3,6 +3,17 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:ui="http://java.sun.com/jsf/facelets">
-	<h1>common footer</h1>
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+
+ <h:form >
+	<p:commandLink id="About" actionListener="#{buttonView.buttonAction}" ajax="false">
+		<h:outputText value="About ADK Eye care" />
+	</p:commandLink>
+	<p:commandLink id="home" actionListener="#{buttonView.buttonAction}" ajax="false">
+		<h:outputText value="home" />
+	</p:commandLink>
+</h:form>
 </html>
