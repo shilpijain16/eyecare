@@ -1,0 +1,6 @@
+
+.menu-border-right {
+	border: px !important;
+	border-right: solid !important;
+    border-right-color: darkgrey !important;
+}
