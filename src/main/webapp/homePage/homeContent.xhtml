@@ -1,0 +1,46 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<form>
+		<h2 class="w3-center">Manual Slideshow</h2>
+
+		<div class="w3-content w3-display-container">
+			<img class="mySlides" src="../resources/images/001.jpg" style="width: 1400px; height: 600px"/>
+			<img class="mySlides" src="../resources/images/002.jpg" style="width: 1400px; height: 600px"/>
+			<img class="mySlides" src="../resources/images/003.jpg" style="width: 1400px; height: 600px"/>
+			<img class="mySlides" src="../resources/images/004.jpg" style="width: 1400px; height: 600px"/>
+			<button class="w3-button w3-black w3-display-left"
+				onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-black w3-display-right"
+				onclick="plusDivs(1)">&#10095;</button>
+		</div>
+
+		<!-- <script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			setInterval(function() {
+				showDivs(slideIndex += 1);
+			}, 3000);
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script> -->
+	</form>
+</ui:composition>

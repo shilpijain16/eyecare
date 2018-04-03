@@ -1,0 +1,48 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<div id="leftAlign">
+		<h:outputLabel value="About ADK" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+
+		<p:commandLink id="home" actionListener="#{buttonView.buttonAction}"
+			ajax="false">
+			<h:outputText value="Home" />
+		</p:commandLink>
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+
+		<p:commandLink id="AboutUs"
+			actionListener="#{buttonView.buttonAction}" ajax="false">
+			<h:outputText value="About Us" />
+		</p:commandLink>
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+
+		<p:commandLink id="DoctorDetails"
+			actionListener="#{buttonView.buttonAction}" ajax="false">
+			<h:outputText value="Doctors" />
+		</p:commandLink>
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+
+		<p:commandLink id="EyeCareDetails"
+			actionListener="#{buttonView.buttonAction}" ajax="false">
+			<h:outputText value="Eye Care Services" />
+		</p:commandLink>
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+
+		<p:commandLink id="ContactDetails"
+			actionListener="#{buttonView.buttonAction}" ajax="false">
+			<h:outputText value="Contact Us" />
+		</p:commandLink>
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+	</div>
+
+</ui:composition>

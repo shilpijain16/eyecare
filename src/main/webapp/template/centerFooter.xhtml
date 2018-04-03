@@ -1,0 +1,40 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<div id="centerAlign">
+		<h:outputLabel value="Services" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<p:commandLink id="ContactDetails3"
+			actionListener="#{buttonView.buttonAction}" ajax="false">
+			<h:outputText value="Contact Us" />
+		</p:commandLink>
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+
+		<p:commandLink id="Cornea" actionListener="#{buttonView.buttonAction}"
+			ajax="false">
+			<h:outputText value="Cornea" />
+		</p:commandLink>
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+
+		<p:commandLink id="LowVision"
+			actionListener="#{buttonView.buttonAction}" ajax="false">
+			<h:outputText value="Low Vision" />
+		</p:commandLink>
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+
+		<p:commandLink id="ContactLens"
+			actionListener="#{buttonView.buttonAction}" ajax="false">
+			<h:outputText value="Contact Lens" />
+		</p:commandLink>
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<h:outputText value="&lt;br/&gt;" escape="false" />
+	</div>
+
+</ui:composition>
