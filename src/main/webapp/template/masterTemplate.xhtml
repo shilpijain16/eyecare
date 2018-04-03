@@ -9,6 +9,7 @@
 	<h:outputStylesheet name="application.css" library="css" />
 	<h:outputStylesheet name="bootstrap.min.css" library="css" />
 	<h:outputScript name="jquery-3.3.1.min.js" library="js" />
+	<h:outputStylesheet name="w3.css" library="css" />
 </h:head>
 
 <h:body>
@@ -23,7 +24,7 @@
 
 		<div id="content" style="background: green">
 			<ui:insert name="content">
-				<!-- <ui:include src="/template/common/commonContent.xhtml" /> -->
+				<ui:include src="/homePage/homeContent.xhtml" />
 				master contents
 			</ui:insert>
 		</div>

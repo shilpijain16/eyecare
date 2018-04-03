@@ -3,23 +3,26 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 
-	<div id="title">
-		<h:graphicImage library="images" name="Download-logo.png" height="150"
-			width="200" />
-		<h:outputText value="ADK JAIN MEMORIAL HOSPITAL" />
+
+	<div class="row">
+		<div id="title" class="col-md-6">
+			<h:graphicImage library="images" name="Download-logo.png"
+				height="150" width="200" />
+			<h:outputText value="ADK JAIN MEMORIAL HOSPITAL" />
+		</div>
+
+		<div class="col-md-6">
+			<h:outputLabel value="Email:" />
+			<h:outputText value="ADKJain@gmail.com" />
+			<h:outputLabel value="Emergency-24*7:" />
+			<h:outputText value="01234567" />
+		</div>
 	</div>
 
-	<div id="ContactDetails	">
-		<h:outputLabel value="Email:" />
-		<h:outputText value="ADKJain@gmail.com" />
-		<h:outputLabel value="Emergency-24*7:" />
-		<h:outputText value="01234567" />
-	</div>
 
-	<div id="menuBar" style="background: red">
+	<div id="menuBar" style="background: orange">
 		<ui:insert name="menubar">
 			<ui:include src="menuBar.xhtml" />
 		</ui:insert>
 	</div>
-
 </ui:composition>
