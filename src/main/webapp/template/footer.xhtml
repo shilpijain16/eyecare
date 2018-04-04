@@ -9,128 +9,21 @@
 
 
 <h:form>
-
-<div class="row">
-  <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4">.col-md-4</div>
-</div>
-	<div id="footer home div">
-	<div id="footer home left" align="left" border="10" style="border:1px solid red" width="33px">
-		<h:outputLabel value="About ADK" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-
-		<p:commandLink id="home" actionListener="#{buttonView.buttonAction}"
-			ajax="false">
-			<h:outputText value="Home" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-
-		<p:commandLink id="AboutUs"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="About Us" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-
-		<p:commandLink id="DoctorDetails"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Doctors" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-
-		<p:commandLink id="EyeCareDetails"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Eye Care Services" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-
-		<p:commandLink id="ContactDetails"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Contact Us" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
+	<div class="row">
+		<div class="col-md-4">
+			<ui:insert name="leftFooter">
+				<ui:include src="/template/leftFooter.xhtml" />
+			</ui:insert>
 		</div>
-		
-		
-		<div id="footer home center" align="center" style="border:1px solid red">
-		
-		<h:outputLabel value="Services" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<p:commandLink id="ContactDetails3"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Contact Us" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		
-		<p:commandLink id="Cornea"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Cornea" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		
-		<p:commandLink id="LowVision"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Low Vision" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		
-		<p:commandLink id="ContactLens"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Contact Lens" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<div class="col-md-4">
+			<ui:insert name="centerFooter">
+				<ui:include src="/template/centerFooter.xhtml" />
+			</ui:insert>
 		</div>
-		
-		
-		
-		
-		
-		<div id="footer home right" align="right" style="border:1px solid red">
-		<h:outputLabel value="Hospital" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<p:commandLink id="ContactDetails2"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Contact Us" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		
-		<p:commandLink id="Cataract"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Cataract" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		
-		
-		<p:commandLink id="NeuroOphthalmology"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Neuro Ophthalmology" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		
-		<p:commandLink id="EyeBankServices"
-			actionListener="#{buttonView.buttonAction}" ajax="false">
-			<h:outputText value="Eye Bank Services" />
-		</p:commandLink>
-		<h:outputText value="&lt;br/&gt;" escape="false" />
-		<h:outputText value="&lt;br/&gt;" escape="false" />
+		<div class="col-md-4">
+			<ui:insert name="rightFooter">
+				<ui:include src="/template/rightFooter.xhtml" />
+			</ui:insert>
 		</div>
 	</div>
 </h:form>
