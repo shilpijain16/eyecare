@@ -1,25 +1,17 @@
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui">
-	
-	<h:form>
-	<div class="row">
-		<div class="col-md-4">
-			<ui:insert name="leftFooter">
-				<ui:include src="/index.xhtml" />
-			</ui:insert>
-		</div>
-		</div>
-		</h:form>
-	<body>
-		<div>
-		<h1>Doctors</h1>
-			<!-- <h:panelGroup
-				style="display:block; text-align:center; background-image: url(../resources/images/002.jpg); background-repeat: no-repeat; background-position: center;">
-				<h:outputText value="TEST" />
-			</h:panelGroup> -->
-		</div>
+	xmlns:p="http://primefaces.org/ui"
+	template="../template/masterTemplate.xhtml">
 
-	</body>
+	
+	<ui:define name="content">
+		<div>
+			<img class="mySlides" src="../resources/images/p1.jpg"
+				style="width: 100%; height: 200px" />
+		</div>
+	</ui:define>
+	
+	
+
 </ui:composition>
